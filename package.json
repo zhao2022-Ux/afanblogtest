@@ -3,11 +3,8 @@
 	"version": "1.1.4",
 	"private": true,
 	"scripts": {
-		"build": "npm run buildzh && gulp",
-		"buildzh": "sh ./deploy-zh.sh && node link.js && npm run clean && hexo generate && hexo swpp",
+		"build": "hexo g",
 		"clean": "hexo clean",
-		"deployzh": "npm run buildzh &&  gulp && hexo deploy",
-		"serverzh": "sh ./deploy-zh.sh && node link.js && npm run clean && hexo generate && hexo swpp && hexo server"
 	},
 	"hexo": {
 		"version": "6.3.0"
